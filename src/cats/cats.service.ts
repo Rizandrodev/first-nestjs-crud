@@ -15,7 +15,7 @@ export class CatsService {
         if (fincat) throw new HttpException("Cat already exists", HttpStatus.NOT_FOUND);
     
         const newCat = {
-            id:this.cats.length+1,  // Gera um ID único baseado no timestamp
+            id:this.cats.length+1,  
             ...createCatdto
         };
         
